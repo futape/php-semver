@@ -4,6 +4,18 @@ A PHP library for working with *Semantic Versioning* strings aka. [*SemVer*](htt
 
 
 
+##Table of contents
+
+1.  [API](#api)
+2.  [System requirements](#system-requirements)
+3.  [A word about the master branch](#a-word-about-the-master-branch)
+4.  [License](#license)
+5.  [Support](#support)
+6.  [Contributing](#contributing)
+7.  [Author](#author)
+
+
+
 ##API
 
 The library's functions are available via the `SemVer` class. That class is defined in the `futape\semver` namespace.  
