@@ -177,7 +177,7 @@ The `test.php` file is released into the public domain and published under the [
 
 ##Support
 
-<a href="https://flattr.com/submit/auto?user_id=lucaskrause&amp;url=http%3A%2F%2Fphp-semver.futape.de" target="_blank"><img src="//button.flattr.com/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a>
+<a href="https://flattr.com/submit/auto?user_id=lucaskrause&amp;url=http%3A%2F%2Fphp-semver.futape.de" target="_blank"><img src="http://button.flattr.com/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a>
 
 
 
