@@ -140,11 +140,11 @@ SemVer is compatible with PHP 5.3+.
 
 The following versions of PHP have been tested.
 
-<tabel>
+<table>
     <tbody>
         <tr>
             <td>5.3.29</td>
-            <td>&#x2713;</td>
+            <td>&#x2714;</td>
         </tr>
     </tbody>
 </table>
