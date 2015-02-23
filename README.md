@@ -17,9 +17,9 @@ where `<path-to-src>` is the path of the directory you have placed the SemVer so
 
 ###Instance functions
 
-####`__construct()`
+####__construct()
 
-    void __construct( string $semVer )
+`void __construct( string $semVer )`
 
 The `SemVer` class's constructor.  
 If the passed SemVer string doesn't match the specification at <http://semver.org/>, an [`InvalidArgumentException`](http://php.net/manual/en/class.invalidargumentexception.php) is thrown.
@@ -29,61 +29,61 @@ If the passed SemVer string doesn't match the specification at <http://semver.or
     <dd>The SemVer string represented by the created object.</dd>
 </dl>
 
-####`__toString()`
+####__toString()
 
-    string __toString()
+`string __toString()`
 
 A *magic* function called when casting a `SemVer` object as a string.
 
 Returns the SemVer string represented by the object.
 
-####`getSemVer()`
+####getSemVer()
 
-    string getSemVer()
+`string getSemVer()`
 
 Returns the SemVer string passed to this class's constructor.
 
-####`getVersionStr()`
+####getVersionStr()
 
-    string getVersionStr()
+`string getVersionStr()`
 
 Returns the *version info* part of the passed SemVer string.
 
-####`getVersion()`
+####getVersion()
 
-    int[] getVersion()
+`int[] getVersion()`
 
 Returns the *version info* part split at `.`s.  
 The array's items are casted as integers.
 
-####`getPreStr()`
+####getPreStr()
 
-    string getPreStr()
+`string getPreStr()`
 
 Returns the *pre-release info* part of the passed SemVer string.
 
-####`getPre()`
+####getPre()
 
-    (string|int)[] getPre()
+`(string|int)[] getPre()`
 
 Returns the *pre-release info* part split at `.`s.  
 Items consisting of digits only are casted as integers, while others are left as strings.
 
-####`getBuildStr()`
+####getBuildStr()
 
-    string getBuildStr()
+`string getBuildStr()`
 
 Returns the *build metadata* part of the passed SemVer string.
 
-####`getBuild()`
+####getBuild()
 
-    string[] getBuild()
+`string[] getBuild()`
 
 Returns the *build metadata* part split at `.`s.
 
-####`isDev()`
+####isDev()
 
-    bool isDev()
+`bool isDev()`
 
 Returns whether the release associated with the SemVer string that is represented by this object is considered to be an unstable release.  
 SemVer strings having a *major version number* of 0, belonging to releases in the initial development phase,
@@ -92,9 +92,9 @@ are treated as unstable. This corresponds to the specification and the recommend
 
 Returns whether the release is unstable.
 
-####`cmp()`
+####cmp()
 
-    int cmp( SemVer $compare )
+`int cmp( SemVer $compare )`
 
 Compares the `SemVer` object with another `SemVer` object passed to this function.  
 If this object is considered to precede the passed one, -1 is returned. If it follows the passed one, 1 is returned instead. Otherwise, 0, indicating that the SemVer string represented by this object is equal to the one of the passed one, is returned. Thus, the order is ascending.  
@@ -107,9 +107,9 @@ This function is perfectly suitable for using it together with PHP's [`usort()`]
 
 Returns whether this object precedes the passed one (`-1`), equals it (`0`) or follows it (`1`).
 
-####`inc()`
+####inc()
 
-    SemVer inc( [ int $item = 2 [, string|false|null $build_metadata = null ]] )
+`SemVer inc( [ int $item = 2 [, string|false|null $build_metadata = null ]] )`
 
 Increases an item of the *version info* part of the object's SemVer string.  
 If the *major version number* or the *minor version number* is increased, the *patch version number* is reset to 0. When incresing the *major version number*, also the *minor version number* is reset.  
